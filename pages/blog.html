@@ -12,7 +12,7 @@
      <header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-white/50 shadow-md backdrop-blur-md transition duration-500">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
       <div class="flex items-center gap-2">
-        <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg">
+       <a href="/index.html"> <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg"></a>
       </div>
 
       <div class="hidden lg:flex items-center gap-6">
@@ -81,28 +81,191 @@
   </div>
 </section>
 
-<section class="py-20 bg-gray-50">
-  <div class="max-w-7xl mx-auto px-6 lg:px-12">
-    <h2 class="text-3xl font-bold text-gray-800 mb-12">Latest Blog</h2>
+<section class="py-16 bg-white text-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">
+      💻 IT Courses
+    </h2>
 
-    <div id="blogContainer" class="space-y-16"></div>
+    <!-- Blog Container -->
+    <div id="blog-container" class="grid grid-cols-1 md:grid-cols-2 gap-10"></div>
 
+    <!-- Pagination -->
     <div class="flex justify-center items-center gap-2 mt-12">
-      <button id="prevPage" class="px-3 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">
-        ‹
-      </button>
-
-      <div id="pagination" class="flex gap-1"></div>
-
-      <button id="nextPage" class="px-3 py-2 rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-700">
-        ›
-      </button>
+      <button id="prevBtn" class="px-3 py-2 text-gray-500 hover:text-pink-500">&lt;</button>
+      <div id="pagination" class="flex items-center gap-2"></div>
+      <button id="nextBtn" class="px-3 py-2 text-gray-500 hover:text-pink-500">&gt;</button>
     </div>
   </div>
+
+  <script>
+    const blogContainer = document.getElementById("blog-container");
+    const pagination = document.getElementById("pagination");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    // IT kurslari ma'lumotlari
+    const blogs = [
+      {
+        title: "Full Stack Web Development",
+        date: "5 May 2025",
+        readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+        text: "Learn both front-end and back-end technologies to become a full-stack web developer.",
+      },
+      {
+        title: "UI/UX Design Fundamentals",
+        date: "22 Apr 2025",
+        readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
+        text: "Master the principles of user interface and experience design to create stunning digital products.",
+      },
+      {
+        title: "Cybersecurity Basics for Beginners",
+        date: "18 Apr 2025",
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+        text: "Understand how to protect systems, networks, and data from digital attacks.",
+      },
+      {
+        title: "Data Science & Machine Learning",
+        date: "2 Apr 2025",
+        readTime: "9 min read",
+        image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80",
+        text: "Dive into Python, statistics, and ML algorithms to analyze and predict data trends.",
+      },
+      {
+        title: "Cloud Computing with AWS",
+        date: "27 Mar 2025",
+        readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
+        text: "Learn how to design, deploy, and manage scalable cloud applications using AWS.",
+      },
+      {
+        title: "Mobile App Development (Flutter)",
+        date: "15 Mar 2025",
+        readTime: "6 min read",
+        image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+        text: "Build beautiful, fast, and responsive mobile apps with Google’s Flutter framework.",
+      },
+      {
+        title: "Artificial Intelligence Essentials",
+        date: "5 Mar 2025",
+        readTime: "10 min read",
+        image: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=800&q=80",
+        text: "Explore the foundations of AI, neural networks, and computer vision.",
+      },
+      {
+        title: "Blockchain & Cryptocurrency",
+        date: "25 Feb 2025",
+        readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
+        text: "Understand the technology behind Bitcoin, Ethereum, and decentralized applications.",
+      },
+      {
+        title: "Ethical Hacking Fundamentals",
+        date: "15 Feb 2025",
+        readTime: "7 min read",
+        image: "https://images.unsplash.com/photo-1593642532973-d31b6557fa68?auto=format&fit=crop&w=800&q=80",
+        text: "Learn to identify and fix security vulnerabilities before hackers can exploit them.",
+      },
+      {
+        title: "DevOps and CI/CD Pipelines",
+        date: "1 Feb 2025",
+        readTime: "8 min read",
+        image: "https://images.unsplash.com/photo-1605902711622-cfb43c4437b5?auto=format&fit=crop&w=800&q=80",
+        text: "Automate your development workflow and improve deployment efficiency.",
+      },
+      {
+        title: "Database Management with SQL",
+        date: "18 Jan 2025",
+        readTime: "5 min read",
+        image: "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?auto=format&fit=crop&w=800&q=80",
+        text: "Master SQL queries and learn to manage relational databases effectively.",
+      },
+      {
+        title: "Game Development with Unity",
+        date: "5 Jan 2025",
+        readTime: "9 min read",
+        image: "https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&w=800&q=80",
+        text: "Learn to build 2D and 3D games using Unity and C# programming language.",
+      },
+    ];
+
+    // Pagination
+    const itemsPerPage = 4;
+    let currentPage = 1;
+    const totalPages = Math.ceil(blogs.length / itemsPerPage);
+
+    function renderBlogs(page) {
+      blogContainer.innerHTML = "";
+      const start = (page - 1) * itemsPerPage;
+      const visible = blogs.slice(start, start + itemsPerPage);
+
+      visible.forEach((blog) => {
+        blogContainer.insertAdjacentHTML(
+          "beforeend",
+          `
+          <div class="flex flex-col md:flex-row gap-6 items-center bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition">
+            <img src="${blog.image}" alt="Blog Image" class="w-full md:w-1/2 rounded-lg object-cover h-56" />
+            <div class="md:w-1/2">
+              <h3 class="text-lg md:text-xl font-bold text-gray-900 mb-2">${blog.title}</h3>
+              <div class="flex items-center text-sm text-gray-500 mb-3 gap-3">
+                <span>${blog.date}</span> <span>•</span> <span>${blog.readTime}</span>
+              </div>
+              <p class="text-gray-600 mb-4">${blog.text}</p>
+              <button class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold py-2 px-5 rounded-md">
+                Read More
+              </button>
+            </div>
+          </div>
+        `
+        );
+      });
+    }
+
+    function renderPagination() {
+      pagination.innerHTML = "";
+      for (let i = 1; i <= totalPages; i++) {
+        const btn = document.createElement("button");
+        btn.textContent = i;
+        btn.className =
+          "px-3 py-1 rounded-md text-sm font-medium " +
+          (i === currentPage
+            ? "bg-pink-500 text-white"
+            : "text-gray-600 hover:bg-pink-100");
+        btn.onclick = () => {
+          currentPage = i;
+          update();
+        };
+        pagination.appendChild(btn);
+      }
+    }
+
+    function update() {
+      renderBlogs(currentPage);
+      renderPagination();
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    }
+
+    prevBtn.onclick = () => {
+      if (currentPage > 1) {
+        currentPage--;
+        update();
+      }
+    };
+
+    nextBtn.onclick = () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        update();
+      }
+    };
+
+    update();
+  </script>
 </section>
-
-
-
 
   </main>
   <footer class="bg-[#071A3E] text-white py-14 px-6 md:px-16 rounded-t-3xl">

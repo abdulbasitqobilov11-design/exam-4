@@ -157,4 +157,35 @@
         tab.classList.add("active", "text-pink-500", "border-pink-500");
       });
     });
-    
+    document.addEventListener("DOMContentLoaded", () => {
+    const accordionButtons = document.querySelectorAll(".accordion-btn");
+
+    accordionButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector("svg");
+
+        // 🔹 Boshqalarni yopamiz (faqat bittasi ochiq bo'lsin)
+        document.querySelectorAll(".accordion-content").forEach((item) => {
+          if (item !== content) {
+            item.style.maxHeight = null;
+            item.classList.add("hidden");
+            const otherIcon = item.previousElementSibling.querySelector("svg");
+            otherIcon.classList.remove("rotate-180");
+          }
+        });
+
+        // 🔹 Bosilganini ochamiz yoki yopamiz
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+          icon.classList.add("rotate-180");
+          content.style.maxHeight = content.scrollHeight + "px";
+        } else {
+          content.classList.add("hidden");
+          icon.classList.remove("rotate-180");
+          content.style.maxHeight = null;
+        }
+      });
+    });
+  });
+  
