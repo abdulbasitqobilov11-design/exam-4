@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acoount</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg">
+     <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+      <header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-white/50 shadow-md backdrop-blur-md transition duration-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg">
+      </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <div class="relative">
+          <input type="text" placeholder="Search bar"
+            class="border rounded-full px-4 py-2 pl-10 text-gray-700 focus:ring-2 focus:ring-pink-500 w-48">
+          <i class="fa fa-search absolute left-3 top-2.5 text-gray-400"></i>
+        </div>
+
+        <div class="relative">
+          <button id="dropdownBtn" class="flex items-center gap-1 hover:text-pink-500 transition">
+            Category <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg">
+            <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Bosh sahifa</a>
+            <a href="/pages/courses.html" class="block px-4 py-2 hover:bg-gray-100"> Course</a>
+            <a href="/pages/detail-course.html" class="block px-4 py-2 hover:bg-gray-100">Detail Course</a>
+            <a href="/pages/blog.html" class="block px-4 py-2 hover:bg-gray-100">Account</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-pink-500 transition">Become a Mentor</a>
+        <button class="border px-5 py-2 rounded-md hover:bg-gray-100 transition">Login</button>
+        <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-2 rounded-md transition hover:shadow-lg hover:-translate-y-1">Sign Up</button>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden border p-2 rounded">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="/index.html" class="block px-4 py-3 hover:bg-gray-100">Home</a>
+      <a href="/pages/courses.html" class="block px-4 py-3 hover:bg-gray-100">Courses</a>
+      <a href="/pages/detail-course.htm" class="block px-4 py-3 hover:bg-gray-100">Detail Course</a>
+      <a href="/pages/blog.htm" class="block px-4 py-3 hover:bg-gray-100">Blog</a>
+      <a href="/pages/account.html" class="block px-4 py-3 hover:bg-gray-100">Account</a>
+    </div>
+  </header>
+  <main>
+    <section class="relative w-full h-screen overflow-hidden">
+  <div class="absolute inset-0 overflow-hidden">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full"
+      src="https://www.youtube.com/embed/84G5TygFVeY?autoplay=1&mute=1&loop=1&playlist=84G5TygFVeY&controls=0&showinfo=0&modestbranding=1
+``` :contentReference[oaicite:0]{index=0}"
+      title="IT Background Video"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="absolute inset-0 bg-black/40"></div>
+</section>
+<section class="py-16 bg-white text-gray-800">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="flex items-center gap-6 mb-10">
+      <img src="https://picsum.photos/100" alt="User" class="w-20 h-20 rounded-full object-cover" />
+      <div>
+        <h2 class="text-2xl font-bold text-gray-900">Romadhona Syarifuddin</h2>
+        <p class="text-gray-600">Full Stack Web Designer</p>
+      </div>
+    </div>
+
+    <div class="flex gap-10 mb-8 border-b">
+      <button id="tab-courses" class="tab active text-pink-500 border-b-2 border-pink-500 font-semibold pb-2">My Courses</button>
+      <button id="tab-wishlist" class="tab text-gray-500 hover:text-pink-500 font-semibold pb-2">Wishlist</button>
+      <button id="tab-certificate" class="tab text-gray-500 hover:text-pink-500 font-semibold pb-2">My Certificate</button>
+    </div>
+
+    <div id="grid-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <div class="bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition">
+        <img src="https://picsum.photos/300/200?random=1" class="w-full h-48 object-cover" alt="Course" />
+        <div class="p-5">
+          <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-md font-medium">UI/UX Design</span>
+          <h3 class="text-lg font-bold mt-3 mb-2">Interpersonal Skills - Work Better With Others!</h3>
+          <p class="text-pink-500 text-sm mb-2">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">★★★★★ <span class="text-gray-500 ml-2">(2078)</span></div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-900">$384</span>
+          </div>
+        </div>
+      </div>
+
+
+      <script>
+        const grid = document.getElementById("grid-container");
+        for (let i = 2; i <= 12; i++) {
+          const card = document.createElement("div");
+          card.className = "bg-white shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition";
+          card.innerHTML = `
+            <img src="https://picsum.photos/300/200?random=${i}" class="w-full h-48 object-cover" alt="Course" />
+            <div class="p-5">
+              <span class="text-xs bg-blue-100 text-blue-700 px-3 py-1 rounded-md font-medium">Web Developer</span>
+              <h3 class="text-lg font-bold mt-3 mb-2">How To Become An Expert Web Developer</h3>
+              <p class="text-pink-500 text-sm mb-2">Tanah Air Team</p>
+              <div class="flex items-center text-yellow-400 text-sm mb-2">★★★★★ <span class="text-gray-500 ml-2">(2078)</span></div>
+              <div class="flex items-center gap-2">
+                <span class="text-gray-400 line-through">$640</span>
+                <span class="text-xl font-bold text-gray-900">$${300 + Math.floor(Math.random() * 500)}</span>
+              </div>
+            </div>`;
+          grid.appendChild(card);
+        }
+      </script>
+    </div>
+  </div>
+
+
+
+</section>
+
+  </main>
+   <footer class="bg-[#071A3E] text-white py-14 px-6 md:px-16 rounded-t-3xl">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="/images/education/Logo.png" alt="Logo" class="h-8 w-auto">
+      </div>
+      <p class="text-sm leading-relaxed text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultricies. Imperdiet mus urna egestas at tellus.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">About</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Courses</a></li>
+        <li><a href="#" class="hover:text-white transition">Mentor</a></li>
+        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Support</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#" class="hover:text-white transition">Help & Support</a></li>
+        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white transition">Code of Conduct</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      <a href="#" class="hover:text-white transition">Terms and Condition</a>
+    </div>
+    <p>@2025 TanahAir Studio. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+<script src="/js/app.js"></script>
+<script src="/js/script.js"></script>
+</html>

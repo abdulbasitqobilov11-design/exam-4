@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Course</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg">
+     <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+     <header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-white/50 shadow-md backdrop-blur-md transition duration-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg">
+      </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <div class="relative">
+          <input type="text" placeholder="Search bar"
+            class="border rounded-full px-4 py-2 pl-10 text-gray-700 focus:ring-2 focus:ring-pink-500 w-48">
+          <i class="fa fa-search absolute left-3 top-2.5 text-gray-400"></i>
+        </div>
+
+        <div class="relative">
+          <button id="dropdownBtn" class="flex items-center gap-1 hover:text-pink-500 transition">
+            Category <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg">
+            <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Bosh sahifa</a>
+            <a href="/pages/courses.html" class="block px-4 py-2 hover:bg-gray-100"> Course</a>
+            <a href="/pages/blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+            <a href="/pages/account.html" class="block px-4 py-2 hover:bg-gray-100">Account</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-pink-500 transition">Become a Mentor</a>
+        <button class="border px-5 py-2 rounded-md hover:bg-gray-100 transition">Login</button>
+        <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-2 rounded-md transition hover:shadow-lg hover:-translate-y-1">Sign Up</button>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden border p-2 rounded">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="/index.html" class="block px-4 py-3 hover:bg-gray-100">Home</a>
+      <a href="/pages/courses.html" class="block px-4 py-3 hover:bg-gray-100">Courses</a>
+      <a href="/pages/detail-course.htm" class="block px-4 py-3 hover:bg-gray-100">Detail Course</a>
+      <a href="/pages/blog.html" class="block px-4 py-3 hover:bg-gray-100">Blog</a>
+      <a href="/pages/account.html" class="block px-4 py-3 hover:bg-gray-100">Account</a>
+    </div>
+  </header>
+  <main>
+  <section class="relative h-[110vh] overflow-hidden text-white flex items-center">
+  <div class="absolute inset-0 z-[-2]">
+    <iframe
+      class="w-full h-full object-cover"
+      src="https://www.youtube.com/embed/w-7xcpsuvpk?autoplay=1&mute=1&loop=1&playlist=w-7xcpsuvpk&controls=0&showinfo=0&modestbranding=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/80 z-[-1]"></div>
+
+  <div class="w-full mx-auto pl-12 md:pl-16 pr-4 relative z-10 text-left">
+    <div class="text-sm text-gray-200 mb-4">
+      <a href="#" class="hover:text-pink-300">Home</a>
+      <span class="mx-2">/</span>
+      <a href="#" class="hover:text-pink-300">Programming Courses</a>
+      <span class="mx-2">/</span>
+      <span class="text-pink-300">How to become an Expert Web Developer</span>
+    </div>
+
+    <h1 class="text-3xl md:text-6xl font-bold leading-tight mb-4">
+      How to become an Expert Web Developer
+    </h1>
+
+    <div class="flex flex-wrap items-center gap-3 mb-6">
+      <div class="flex text-yellow-400 text-xl">★★★★★</div>
+      <div class="text-lg font-semibold">4.7/5</div>
+      <div class="text-gray-300 text-sm">(1023 Reviews)</div>
+      <div class="text-gray-300 text-sm">• 20327 Students</div>
+    </div>
+
+
+    <div class="flex flex-wrap items-center gap-4 mb-6">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-full border-4 border-pink-400 bg-gray-200 flex items-center justify-center">
+          <i class="fa fa-user text-pink-600"></i>
+        </div>
+        <div class="font-medium text-lg">Pak Arif Satria Kecek ulalala</div>
+      </div>
+    </div>
+
+    <div class="flex flex-wrap items-center gap-4">
+      <button class="bg-pink-500 hover:bg-pink-600 px-6 py-3 rounded-lg text-white font-semibold shadow-md transition">
+        Add To Wishlist +
+      </button>
+      <button class="bg-white/90 hover:bg-white text-gray-800 px-6 py-3 rounded-lg font-semibold shadow transition flex items-center gap-2">
+        <span>Share</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 12v8m0 0h8m-8 0L20 4" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="relative py-20 bg-white text-gray-800">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+        What You’ll Learn From This Course
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat. Lectus morbi amet et aliquam magna mauris. Proin pulvinar fringilla nunc, tristique urna, massa, tincidunt.
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-10">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. Nam scelerisque vestibulum bibendum a turpis. Ante feugiat lectus massa, odio amet. Auctor sit mattis non id proin elit placerat.
+      </p>
+
+      <h3 class="text-2xl font-bold text-gray-900 mb-5">Objectives Features</h3>
+
+      <div class="grid sm:grid-cols-2 gap-5 bg-pink-50 p-6 rounded-xl">
+        <div>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Build fully websites and web apps for your startup or business.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Build fully websites and web apps for your startup or business.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Build fully websites and web apps for your startup or business.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Build fully websites and web apps for your startup or business.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul class="space-y-4 text-gray-700">
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Craft a portfolio of websites to apply for junior developer jobs.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Craft a portfolio of websites to apply for junior developer jobs.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Craft a portfolio of websites to apply for junior developer jobs.
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-pink-500">✔</span>
+              Craft a portfolio of websites to apply for junior developer jobs.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-gray-50 rounded-xl shadow-md overflow-hidden border">
+      <div class="aspect-video bg-black">
+        <iframe
+          src="https://rutube.ru/play/embed/9af9b3c811f9b9dbab0756b40b3f7b7d"
+          frameborder="0"
+          allowfullscreen
+          class="w-full h-full"
+        ></iframe>
+      </div>
+
+      <div class="p-6">
+        <div class="flex items-center justify-between mb-4">
+          <div class="text-3xl font-bold text-gray-900">$53</div>
+          <div class="text-gray-400 line-through text-lg">$124</div>
+        </div>
+
+        <div class="flex items-center justify-between mb-4">
+          <p class="text-gray-700 font-semibold">64 Document courses</p>
+          <span class="bg-pink-500 text-white text-sm font-bold px-3 py-1 rounded-lg">
+            50% OFF
+          </span>
+        </div>
+
+        <ul class="space-y-3 mb-6 text-gray-700">
+          <li class="flex items-center gap-2"><span class="text-pink-500">✔</span> 24 Modules</li>
+          <li class="flex items-center gap-2"><span class="text-pink-500">✔</span> 12 Exercises</li>
+          <li class="flex items-center gap-2"><span class="text-pink-500">✔</span> Full Time Access</li>
+          <li class="flex items-center gap-2"><span class="text-pink-500">✔</span> Certificate</li>
+          <li class="flex items-center gap-2"><span class="text-pink-500">✔</span> 20 Resources</li>
+        </ul>
+
+        <div class="flex flex-col gap-3">
+          <button class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 rounded-lg shadow transition">
+            Add To Cart
+          </button>
+          <button class="border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white font-semibold py-3 rounded-lg shadow transition">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white text-gray-800">
+  <div class="max-w-6xl px-6 lg:pl-20">
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+      Requirement
+    </h2>
+
+    <div class="bg-pink-50 p-8 rounded-xl max-w-3xl">
+      <ul class="space-y-4 text-gray-700 text-base leading-relaxed">
+        <li class="flex items-start gap-3">
+          <span class="text-pink-500 text-lg">✔</span>
+          No programming experience needed - I'll teach you everything you need to know
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-pink-500 text-lg">✔</span>
+          A Mac or PC computer with access to the internet
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-pink-500 text-lg">✔</span>
+          No previous coding experience is needed
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-pink-500 text-lg">✔</span>
+          All tools and software used in this course will be free
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-pink-500 text-lg">✔</span>
+          Any operating system: Mac, PC, Linux
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section class="py-16 bg-white text-gray-800">
+  <div class="max-w-6xl mx-auto px-6 lg:pl-20">
+    <!-- Header -->
+    <div class="flex flex-wrap justify-between items-center mb-8">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+        Module Courses
+      </h2>
+      <p class="text-gray-600 text-sm md:text-base">
+        24 Modules · 124 Lectures · 24h 12m
+      </p>
+    </div>
+
+    <!-- Accordion Wrapper -->
+    <div class="space-y-4" id="accordion">
+
+      <!-- Accordion Item 1 -->
+      <div class="bg-pink-50 rounded-xl overflow-hidden border border-pink-100">
+        <button
+          class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-900 accordion-btn"
+        >
+          Introducing to Web Development
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content bg-white border-t border-gray-100">
+          <ul class="divide-y divide-gray-100">
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-pink-600">
+                <i class="fa fa-play-circle"></i> Welcome!
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-file-alt text-pink-400"></i> Syllabus download
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-folder-open text-pink-400"></i> Courses resources
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-video text-pink-400"></i> Join online group classes
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-globe text-pink-400"></i> How do website actually work?
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-network-wired text-pink-400"></i> What is Internet?
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-code text-pink-400"></i> Download 10 rules code
+              </span>
+              <span class="text-gray-500 text-sm">01:24</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Accordion Item 2 -->
+      <div class="bg-pink-50 rounded-xl overflow-hidden border border-pink-100">
+        <button
+          class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-900 accordion-btn"
+        >
+          How the Internet works
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content hidden bg-white border-t border-gray-100">
+          <ul class="divide-y divide-gray-100">
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-info-circle text-pink-400"></i> DNS & Hosting Basics
+              </span>
+              <span class="text-gray-500 text-sm">02:11</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-server text-pink-400"></i> Request & Response Cycle
+              </span>
+              <span class="text-gray-500 text-sm">01:55</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Accordion Item 3 -->
+      <div class="bg-pink-50 rounded-xl overflow-hidden border border-pink-100">
+        <button
+          class="w-full flex justify-between items-center px-5 py-4 text-left font-semibold text-gray-900 accordion-btn"
+        >
+          Introducing HTML
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 transition-transform duration-300" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+
+        <div class="accordion-content hidden bg-white border-t border-gray-100">
+          <ul class="divide-y divide-gray-100">
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-code text-pink-400"></i> Basic HTML Structure
+              </span>
+              <span class="text-gray-500 text-sm">03:20</span>
+            </li>
+            <li class="flex justify-between items-center px-5 py-3">
+              <span class="flex items-center gap-2 text-gray-700">
+                <i class="fa fa-paragraph text-pink-400"></i> Headings & Paragraphs
+              </span>
+              <span class="text-gray-500 text-sm">02:10</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="mt-10 text-center">
+      <button
+        class="bg-pink-500 hover:bg-pink-600 text-white font-semibold py-3 px-10 rounded-lg shadow-md transition">
+        17 More Modules
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<section class="py-20 bg-white text-gray-800">
+  <div class="max-w-6xl mx-auto px-6 lg:px-12">
+    <h2 class="text-2xl font-bold text-gray-900 mb-8">Mentor</h2>
+
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-10 mb-16">
+      <div class="flex-shrink-0">
+        <img
+          src="/images/detail-course/mentor.webp"
+          alt="Mentor"
+          class="w-52 h-52 rounded-lg object-cover shadow-md border border-gray-200"
+        />
+      </div>
+
+      <div class="flex-1">
+        <h3 class="text-xl font-bold text-gray-900 mb-1">Arif Kecek</h3>
+        <p class="text-gray-500 mb-3">Senior developer expert instructor</p>
+
+        <div class="flex items-center gap-2 mb-3">
+          <div class="flex text-yellow-400 text-lg">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <span class="font-semibold text-gray-800">4.7/5</span>
+          <span class="text-gray-400 text-sm">(1023 Reviews)</span>
+        </div>
+
+        <p class="text-gray-600 leading-relaxed mb-5 max-w-xl">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Feugiat eu in orci, nunc amet libero. 
+          Nam scelerisque vestibulum bibendum a turpis.
+        </p>
+
+        <div class="flex gap-8 text-gray-700">
+          <div class="flex items-center gap-2">
+            <i class="fa fa-book text-pink-500"></i>
+            <span>12 Courses</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa fa-users text-pink-500"></i>
+            <span>2583 Students</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-2xl font-bold text-gray-900 mb-6">Feedback</h2>
+    <div class="bg-white border border-gray-100 shadow-sm p-8 rounded-2xl">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-10">
+        <div class="w-full md:w-1/4 text-center md:text-left">
+          <div class="text-6xl font-bold text-gray-900">5.0</div>
+          <div class="flex justify-center md:justify-start text-yellow-400 text-2xl mb-2">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <p class="text-gray-600 text-sm font-medium">Course Rating</p>
+        </div>
+
+        <div class="flex-1 w-full space-y-3">
+          <div class="flex items-center gap-3">
+            <span class="w-16 text-sm font-medium text-gray-700 text-right">5 stars</span>
+            <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-3 bg-yellow-400 w-[90%] rounded-full"></div>
+            </div>
+            <span class="w-20 text-sm text-gray-500 text-right">500 reviews</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-16 text-sm font-medium text-gray-700 text-right">4 stars</span>
+            <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-3 bg-yellow-400 w-[70%] rounded-full"></div>
+            </div>
+            <span class="w-20 text-sm text-gray-500 text-right">214 reviews</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-16 text-sm font-medium text-gray-700 text-right">3 stars</span>
+            <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-3 bg-yellow-400 w-[45%] rounded-full"></div>
+            </div>
+            <span class="w-20 text-sm text-gray-500 text-right">131 reviews</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-16 text-sm font-medium text-gray-700 text-right">2 stars</span>
+            <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-3 bg-yellow-400 w-[25%] rounded-full"></div>
+            </div>
+            <span class="w-20 text-sm text-gray-500 text-right">51 reviews</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <span class="w-16 text-sm font-medium text-gray-700 text-right">1 star</span>
+            <div class="flex-1 h-3 bg-gray-200 rounded-full overflow-hidden">
+              <div class="h-3 bg-yellow-400 w-[10%] rounded-full"></div>
+            </div>
+            <span class="w-20 text-sm text-gray-500 text-right">23 reviews</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="max-w-6xl mx-auto px-6 lg:px-12 py-16 border-t border-gray-100">
+  <div class="flex justify-between items-center mb-8">
+    <h2 class="text-2xl font-bold text-gray-900">Reviews</h2>
+    <div class="relative">
+      <button
+        class="bg-pink-500 text-white px-4 py-2 rounded-md text-sm font-medium flex items-center gap-2 hover:bg-pink-600 transition">
+        All Ratings
+        <i class="fa fa-chevron-down text-xs"></i>
+      </button>
+    </div>
+  </div>
+
+  <div class="space-y-8">
+    <div class="flex flex-col md:flex-row gap-5 border-b border-gray-100 pb-8">
+      <div class="flex-shrink-0">
+        <div class="w-16 h-16 rounded-full bg-gray-200"></div>
+      </div>
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="font-semibold text-gray-800">Mas Ehan</h3>
+            <div class="flex text-yellow-400 text-sm mb-1">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i>
+            </div>
+            <p class="text-gray-500 text-sm">2 month ago</p>
+          </div>
+          <div class="flex gap-4 text-gray-400 text-lg">
+            <i class="fa fa-thumbs-up hover:text-pink-500 cursor-pointer transition"></i>
+            <i class="fa fa-thumbs-down hover:text-pink-500 cursor-pointer transition"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere.
+          Tempus, risus varius rhoncus ipsum, sed egestas nisl pellentesque. Sapien quam varius euismod in velit diam posuere netus nec.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-5 border-b border-gray-100 pb-8">
+      <div class="flex-shrink-0">
+        <div class="w-16 h-16 rounded-full bg-gray-200"></div>
+      </div>
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="font-semibold text-gray-800">Malik</h3>
+            <div class="flex text-yellow-400 text-sm mb-1">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i>
+            </div>
+            <p class="text-gray-500 text-sm">2 month ago</p>
+          </div>
+          <div class="flex gap-4 text-gray-400 text-lg">
+            <i class="fa fa-thumbs-up hover:text-pink-500 cursor-pointer transition"></i>
+            <i class="fa fa-thumbs-down hover:text-pink-500 cursor-pointer transition"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere.
+          Tempus, risus varius rhoncus ipsum, sed egestas nisl pellentesque. Sapien quam varius euismod in velit diam posuere netus nec.
+        </p>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row gap-5 border-b border-gray-100 pb-8">
+      <div class="flex-shrink-0">
+        <div class="w-16 h-16 rounded-full bg-gray-200"></div>
+      </div>
+      <div class="flex-1">
+        <div class="flex justify-between items-start mb-2">
+          <div>
+            <h3 class="font-semibold text-gray-800">Pakjoo</h3>
+            <div class="flex text-yellow-400 text-sm mb-1">
+              <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                class="fa fa-star"></i>
+            </div>
+            <p class="text-gray-500 text-sm">2 month ago</p>
+          </div>
+          <div class="flex gap-4 text-gray-400 text-lg">
+            <i class="fa fa-thumbs-up hover:text-pink-500 cursor-pointer transition"></i>
+            <i class="fa fa-thumbs-down hover:text-pink-500 cursor-pointer transition"></i>
+          </div>
+        </div>
+        <p class="text-gray-600 text-sm leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae non id interdum massa enim posuere.
+          Tempus, risus varius rhoncus ipsum, sed egestas nisl pellentesque. Sapien quam varius euismod in velit diam posuere netus nec.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-10 text-center">
+    <button
+      class="bg-pink-500 text-white px-8 py-3 rounded-md font-medium hover:bg-pink-600 transition">
+      More Reviews
+    </button>
+  </div>
+</div>
+
+
+</section>
+
+<section class="max-w-7xl mx-auto px-6 lg:px-12 py-20 bg-white text-gray-800">
+  <h2 class="text-2xl md:text-3xl font-bold mb-10 text-gray-900">
+    More Courses From Arif Kecek
+  </h2>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div
+      class="bg-white shadow-md hover:shadow-lg rounded-xl overflow-hidden transition transform hover:-translate-y-1">
+      <div class="bg-gray-200 h-44 w-full relative flex items-center justify-center">
+        <span
+          class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          UI/UX Design
+        </span>
+        <img src="/images/education/ui-ux.jpg" alt="ui-ux">
+      </div>
+      <div class="p-5">
+        <h3 class="text-sm font-semibold mb-2 text-gray-800">
+          Interpersonal Skills – Work Better With Others!
+        </h3>
+        <p class="text-pink-500 text-xs font-semibold mb-2">Tanah Air Team</p>
+        <div class="flex items-center text-yellow-400 text-sm mb-1">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span class="text-gray-500 text-xs ml-2">(2078)</span>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-gray-400 line-through text-sm">$640</span>
+          <span class="text-xl font-bold text-gray-900">$384</span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white shadow-md hover:shadow-lg rounded-xl overflow-hidden transition transform hover:-translate-y-1">
+      <div class="bg-gray-200 h-44 w-full relative flex items-center justify-center">
+        <span
+          class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          Web Developer
+        </span>
+        <img src="/images/education/studing.webp" alt="">
+      </div>
+      <div class="p-5">
+        <h3 class="text-sm font-semibold mb-2 text-gray-800">
+          How To Become An Expert Web Developer
+        </h3>
+        <p class="text-pink-500 text-xs font-semibold mb-2">Tanah Air Team</p>
+        <div class="flex items-center text-yellow-400 text-sm mb-1">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span class="text-gray-500 text-xs ml-2">(2078)</span>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-gray-400 line-through text-sm">$640</span>
+          <span class="text-xl font-bold text-gray-900">$735</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="bg-white shadow-md hover:shadow-lg rounded-xl overflow-hidden transition transform hover:-translate-y-1">
+      <div class="bg-gray-200 h-44 w-full relative flex items-center justify-center">
+        <span
+          class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          UX Research
+        </span>
+        <img src="/images/education/UX.svg" alt="UX Research">
+      </div>
+      <div class="p-5">
+        <h3 class="text-sm font-semibold mb-2 text-gray-800">
+          User Experience Design Essentials
+        </h3>
+        <p class="text-pink-500 text-xs font-semibold mb-2">Tanah Air Team</p>
+        <div class="flex items-center text-yellow-400 text-sm mb-1">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span class="text-gray-500 text-xs ml-2">(2078)</span>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-gray-400 line-through text-sm">$640</span>
+          <span class="text-xl font-bold text-gray-900">$826</span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-white shadow-md hover:shadow-lg rounded-xl overflow-hidden transition transform hover:-translate-y-1">
+      <div class="bg-gray-200 h-44 w-full relative flex items-center justify-center">
+        <span
+          class="absolute top-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          3D Design
+        </span>
+        <img src="/images/education/3D-design.webp" alt="3D-design">
+      </div>
+      <div class="p-5">
+        <h3 class="text-sm font-semibold mb-2 text-gray-800">
+          Creating 3D Modelling In Blender
+        </h3>
+        <p class="text-pink-500 text-xs font-semibold mb-2">Tanah Air Team</p>
+        <div class="flex items-center text-yellow-400 text-sm mb-1">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <span class="text-gray-500 text-xs ml-2">(2078)</span>
+        </div>
+        <div class="flex items-center gap-2 mt-2">
+          <span class="text-gray-400 line-through text-sm">$640</span>
+          <span class="text-xl font-bold text-gray-900">$710</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  </main>
+   <footer class="bg-[#071A3E] text-white py-14 px-6 md:px-16 rounded-t-3xl">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="/images/education/Logo.png" alt="Logo" class="h-8 w-auto">
+      </div>
+      <p class="text-sm leading-relaxed text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultricies. Imperdiet mus urna egestas at tellus.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">About</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Courses</a></li>
+        <li><a href="#" class="hover:text-white transition">Mentor</a></li>
+        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Support</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#" class="hover:text-white transition">Help & Support</a></li>
+        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white transition">Code of Conduct</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      <a href="#" class="hover:text-white transition">Terms and Condition</a>
+    </div>
+    <p>@2025 TanahAir Studio. All rights reserved.</p>
+  </div>
+</footer>
+<script src="/js/app.js"></script>
+<script src="/js/script.js"></script>
+</body>
+</html>

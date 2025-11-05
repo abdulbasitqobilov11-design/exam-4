@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg">
+     <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-white/50 shadow-md backdrop-blur-md transition duration-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg">
+      </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <div class="relative">
+          <input type="text" placeholder="Search bar"
+            class="border rounded-full px-4 py-2 pl-10 text-gray-700 focus:ring-2 focus:ring-pink-500 w-48">
+          <i class="fa fa-search absolute left-3 top-2.5 text-gray-400"></i>
+        </div>
+
+        <div class="relative">
+          <button id="dropdownBtn" class="flex items-center gap-1 hover:text-pink-500 transition">
+            Category <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg">
+            <a href="/index.html" class="block px-4 py-2 hover:bg-gray-100">Bosh sahifa</a>
+            <a href="/pages/detail-course.html" class="block px-4 py-2 hover:bg-gray-100">Detail Course</a>
+            <a href="/pages/blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+            <a href="/pages/account.html" class="block px-4 py-2 hover:bg-gray-100">Account</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-pink-500 transition">Become a Mentor</a>
+        <button class="border px-5 py-2 rounded-md hover:bg-gray-100 transition">Login</button>
+        <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-2 rounded-md transition hover:shadow-lg hover:-translate-y-1">Sign Up</button>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden border p-2 rounded">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="/index.html" class="block px-4 py-3 hover:bg-gray-100">Home</a>
+      <a href="/pages/courses.html" class="block px-4 py-3 hover:bg-gray-100">Courses</a>
+      <a href="/pages/detail-course.htm" class="block px-4 py-3 hover:bg-gray-100">Detail Course</a>
+      <a href="/pages/blog.html" class="block px-4 py-3 hover:bg-gray-100">Blog</a>
+      <a href="/pages/account.html" class="block px-4 py-3 hover:bg-gray-100">Account</a>
+    </div>
+  </header>
+  <main>
+   <section class="max-w-7xl mx-auto px-4 py-16">
+  <div class="mb-8">
+    <h1 class="text-4xl font-extrabold text-gray-900">Programming Courses</h1>
+    <p class="text-gray-500 mt-2">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis.
+    </p>
+  </div>
+
+  <h2 class="text-2xl font-semibold text-gray-800 mb-6">
+    Most Popular Development Courses
+  </h2>
+
+  <div class="relative">
+    <button id="prevBtn" class="absolute left-0 top-1/2 -translate-y-1/2 bg-gray-200 text-gray-700 p-3 rounded-full hover:bg-gray-300 shadow-lg z-10">
+      <i class="fa fa-chevron-left"></i>
+    </button>
+
+    <div class="overflow-hidden">
+      <div id="carouselTrack" class="flex gap-6 transition-transform duration-700 ease-in-out">
+        
+        <div id="coursesGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="art">
+        <div class="relative">
+          <img src="/images/education/ui-ux.jpg" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Interpersonal Skills - Work Better With Others!</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$384</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="development">
+        <div class="relative">
+          <img src="/images/education/development-web.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Web Developer</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">How To Become An Expert Web Developer</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$735</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="art">
+        <div class="relative">
+          <img src="/images/education/UX.svg" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">UX Research</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">User Experience Design Essentials</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$826</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="marketing">
+        <div class="relative">
+          <img src="/images/education/3D-design.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">3D Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Creating 3D Modelling In Blender</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$710</span>
+          </div>
+        </div>
+      </div>
+
+
+
+    <button id="nextBtn" class="absolute right-0 top-1/2 -translate-y-1/2 bg-pink-500 text-white p-3 rounded-full hover:bg-pink-600 shadow-lg z-10">
+      <i class="fa fa-chevron-right"></i>
+    </button>
+  </div>
+</section>
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <div class="flex items-center justify-between mb-12">
+    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">
+      Programming Topics
+    </h2>
+    <button
+      class="bg-pink-500 hover:bg-pink-600 text-white text-sm font-semibold px-6 py-2.5 rounded-lg shadow-md transition duration-300"
+    >
+      See All
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img
+          src="/images/courses/python.png"
+          alt="Python"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        Python
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img
+          src="/images/courses/js.webp"
+          alt="Javascript"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        Javascript
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img src="/images/courses/css.svg" alt="CSS" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        CSS
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img src="/images/courses/C++.jpg" alt="C#" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        C#
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img
+          src="/images/courses/web-developer.webp"
+          alt="Web Development"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        Web Development
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img
+          src="/images/courses/data sciense.jpg"
+          alt="Data Science"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        Data Science
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img
+          src="/images/courses/java.jpg"
+          alt="Java"
+          class="w-full h-full object-cover"
+        />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        Java
+      </div>
+    </div>
+
+    <div
+      class="relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group cursor-pointer"
+    >
+      <div class="h-52 bg-gray-300">
+        <img src="/images/courses/sql.webp" alt="SQL" class="w-full h-full object-cover" />
+      </div>
+      <div
+        class="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-white/95 text-gray-800 text-sm font-semibold py-2 px-5 rounded-lg shadow group-hover:bg-pink-500 group-hover:text-white transition duration-300"
+      >
+        SQL
+      </div>
+    </div>
+  </div>
+</section>
+   
+
+
+<section class="px-6 py-10">
+  <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8">
+
+    <aside id="sidebar" class="w-full md:w-1/4 space-y-6">
+      <div class="bg-white rounded-2xl p-6 shadow-sm">
+        <div class="flex items-center justify-between">
+          <h2 class="text-2xl font-bold">All Courses</h2>
+          <button id="mobileFilterClose" class="md:hidden text-sm text-gray-400">Close</button>
+        </div>
+
+        <div class="mt-6 space-y-4 text-gray-700">
+          <div class="filter-section">
+            <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+              <span>Ratings</span><span class="chev">⌄</span>
+            </button>
+            <ul class="section-body mt-3 space-y-2">
+              <li><label class="inline-flex items-center gap-2"><input data-filter="rating" type="checkbox" value="5" class="filter-checkbox"> <span class="text-sm">★★★★★ 5 (1242)</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="rating" type="checkbox" value="4" class="filter-checkbox"> <span class="text-sm">★★★★☆ 4+ (2145)</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="rating" type="checkbox" value="3" class="filter-checkbox"> <span class="text-sm">★★★☆☆ 3+ (224)</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="rating" type="checkbox" value="2" class="filter-checkbox"> <span class="text-sm">★★☆☆☆ 2+ (2049)</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="rating" type="checkbox" value="1" class="filter-checkbox"> <span class="text-sm">★☆☆☆☆ 1+ (2049)</span></label></li>
+            </ul>
+          </div>
+
+          <div class="filter-section">
+            <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+              <span>Durations</span><span class="chev">⌄</span>
+            </button>
+            <ul class="section-body mt-3 space-y-2">
+              <li><label class="inline-flex items-center gap-2"><input data-filter="duration" type="checkbox" value="1-3" class="filter-checkbox"> <span class="text-sm">1–3 Hours</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="duration" type="checkbox" value="3-6" class="filter-checkbox"> <span class="text-sm">3–6 Hours</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="duration" type="checkbox" value="6-12" class="filter-checkbox"> <span class="text-sm">6–12 Hours</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="duration" type="checkbox" value="13+" class="filter-checkbox"> <span class="text-sm">13+ Hours</span></label></li>
+            </ul>
+          </div>
+
+          <div class="filter-section">
+            <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+              <span>Categories</span><span class="chev">⌄</span>
+            </button>
+            <ul class="section-body mt-3 space-y-2">
+              <li><label class="inline-flex items-center gap-2"><input data-filter="category" type="checkbox" value="Golang" class="filter-checkbox"> <span class="text-sm">Golang</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="category" type="checkbox" value="Java" class="filter-checkbox"> <span class="text-sm">Java</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="category" type="checkbox" value="Flutter" class="filter-checkbox"> <span class="text-sm">Flutter</span></label></li>
+              <li><label class="inline-flex items-center gap-2"><input data-filter="category" type="checkbox" value="CSS" class="filter-checkbox"> <span class="text-sm">CSS</span></label></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl p-6 shadow-sm space-y-4 text-gray-700">
+        <div class="filter-section">
+          <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+            <span>Level</span><span class="chev">⌄</span>
+          </button>
+          <ul class="section-body mt-3 space-y-2">
+            <li><label class="inline-flex items-center gap-2"><input data-filter="level" type="checkbox" value="Beginner" class="filter-checkbox"> Beginner</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="level" type="checkbox" value="Intermediate" class="filter-checkbox"> Intermediate</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="level" type="checkbox" value="Expert" class="filter-checkbox"> Expert</label></li>
+          </ul>
+        </div>
+
+        <div class="filter-section">
+          <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+            <span>Language</span><span class="chev">⌄</span>
+          </button>
+          <ul class="section-body mt-3 space-y-2">
+            <li><label class="inline-flex items-center gap-2"><input data-filter="language" type="checkbox" value="English" class="filter-checkbox"> English</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="language" type="checkbox" value="Espanol" class="filter-checkbox"> Espanol</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="language" type="checkbox" value="Melayu" class="filter-checkbox"> Melayu</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="language" type="checkbox" value="Bahasa" class="filter-checkbox"> Bahasa Indonesia</label></li>
+          </ul>
+        </div>
+
+        <div class="filter-section">
+          <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+            <span>Price</span><span class="chev">⌄</span>
+          </button>
+          <ul class="section-body mt-3 space-y-2">
+            <li><label class="inline-flex items-center gap-2"><input data-filter="priceType" type="checkbox" value="Free" class="filter-checkbox"> Free</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="priceType" type="checkbox" value="Paid" class="filter-checkbox"> Paid</label></li>
+          </ul>
+        </div>
+
+        <div class="filter-section">
+          <button class="section-toggle w-full flex justify-between items-center text-left font-semibold">
+            <span>Features</span><span class="chev">⌄</span>
+          </button>
+          <ul class="section-body mt-3 space-y-2">
+            <li><label class="inline-flex items-center gap-2"><input data-filter="feature" type="checkbox" value="Certificate" class="filter-checkbox"> Certificate</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="feature" type="checkbox" value="Quizzes" class="filter-checkbox"> Quizzes</label></li>
+            <li><label class="inline-flex items-center gap-2"><input data-filter="feature" type="checkbox" value="Assignments" class="filter-checkbox"> Assignments</label></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <div class="flex-1">
+      <div class="flex items-center justify-between mb-6">
+        <div class="hidden md:flex items-center gap-4">
+        </div>
+
+        <div class="flex items-center gap-4">
+          <button id="mobileFilterOpen" class="md:hidden bg-white border px-3 py-1 rounded-lg text-sm">Filter</button>
+          <button id="sortBtn" class="bg-pink-500 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow hover:bg-pink-600">Most Popular</button>
+        </div>
+      </div>
+
+      <div id="cardsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8"></div>
+
+      <div class="flex justify-center items-center gap-3">
+        <button id="prevBtn" class="text-gray-400 hover:text-gray-700">&lt;</button>
+        <div id="pagination" class="flex gap-2"></div>
+        <button id="nextBtn" class="text-gray-400 hover:text-gray-700">&gt;</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+  </main>
+
+  <footer class="bg-[#071A3E] text-white py-14 px-6 md:px-16 rounded-t-3xl">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="/images/education/Logo.png" alt="Logo" class="h-8 w-auto">
+      </div>
+      <p class="text-sm leading-relaxed text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultricies. Imperdiet mus urna egestas at tellus.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">About</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Courses</a></li>
+        <li><a href="#" class="hover:text-white transition">Mentor</a></li>
+        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Support</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#" class="hover:text-white transition">Help & Support</a></li>
+        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white transition">Code of Conduct</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      <a href="#" class="hover:text-white transition">Terms and Condition</a>
+    </div>
+    <p>@2025 TanahAir Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="/js/app.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

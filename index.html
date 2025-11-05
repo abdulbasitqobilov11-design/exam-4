@@ -1,0 +1,619 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Education Website Templates</title>
+  <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body class="antialiased text-gray-800 font-sans bg-white">
+
+  <header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-white/50 shadow-md backdrop-blur-md transition duration-500">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+      <div class="flex items-center gap-2">
+        <img src="/images/education/Logo.png" alt="logo" class="w-100% drop-shadow-lg">
+      </div>
+
+      <div class="hidden lg:flex items-center gap-6">
+        <div class="relative">
+          <input type="text" placeholder="Search bar"
+            class="border rounded-full px-4 py-2 pl-10 text-gray-700 focus:ring-2 focus:ring-pink-500 w-48">
+          <i class="fa fa-search absolute left-3 top-2.5 text-gray-400"></i>
+        </div>
+
+        <div class="relative">
+          <button id="dropdownBtn" class="flex items-center gap-1 hover:text-pink-500 transition">
+            Category <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border rounded-lg shadow-lg">
+            <a href="/pages/courses.html" class="block px-4 py-2 hover:bg-gray-100">Courses</a>
+            <a href="/pages/detail-course.html" class="block px-4 py-2 hover:bg-gray-100">Detail Course</a>
+            <a href="/pages/blog.html" class="block px-4 py-2 hover:bg-gray-100">Blog</a>
+            <a href="/pages/account.html" class="block px-4 py-2 hover:bg-gray-100">Account</a>
+          </div>
+        </div>
+
+        <a href="#" class="hover:text-pink-500 transition">Become a Mentor</a>
+        <button class="border px-5 py-2 rounded-md hover:bg-gray-100 transition">Login</button>
+        <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-5 py-2 rounded-md transition hover:shadow-lg hover:-translate-y-1">Sign Up</button>
+      </div>
+
+      <button id="menuBtn" class="lg:hidden border p-2 rounded">
+        <i class="fa fa-bars"></i>
+      </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t">
+      <a href="/index.html" class="block px-4 py-3 hover:bg-gray-100">Home</a>
+      <a href="/pages/courses.html" class="block px-4 py-3 hover:bg-gray-100">Courses</a>
+      <a href="/pages/detail-course.htm" class="block px-4 py-3 hover:bg-gray-100">Detail Course</a>
+      <a href="/pages/blog.html" class="block px-4 py-3 hover:bg-gray-100">Blog</a>
+      <a href="/pages/account.html" class="block px-4 py-3 hover:bg-gray-100">Account</a>
+    </div>
+  </header>
+
+ <main>
+     <section class="relative pt-32 pb-20 overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0b132b] to-[#1c2541]">
+      <img src="img/hero-bg.png" alt="" class="w-full h-full object-cover opacity-30">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-10 items-center text-white">
+      <div class="space-y-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+          Find the Best <br> Courses and <br> Amazing Mentor
+        </h1>
+        <p class="text-gray-300 max-w-md">
+          Learn from the best mentors and explore thousands of modern courses to boost your skills and career.
+        </p>
+
+        <div class="bg-white rounded-full flex items-center p-1 max-w-md shadow-lg">
+          <input type="text" placeholder="Type in the course you want to learn"
+            class="flex-grow px-4 py-2 rounded-full text-gray-700 focus:outline-none text-sm">
+          <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm font-medium hover:shadow-xl transition">
+            Search
+          </button>
+        </div>
+
+        <div class="flex flex-wrap gap-8 text-sm text-gray-200">
+          <div class="flex items-center gap-2 animate-bounce">
+            <img src="/images/education/access_alarm.png" alt="" class="w-5 h-5">
+            <span>Life Time Access</span>
+          </div>
+          <div class="flex items-center gap-2 animate-pulse">
+            <img src="images/education/user.png" alt="" class="w-5 h-5">
+            <span>Expert Mentor</span>
+          </div>
+          <div class="flex items-center gap-2 animate-bounce">
+            <img src="/images/education/video_library.png" alt="" class="w-5 h-5">
+            <span>100k+ Courses</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative bg-gray-100 rounded-xl min-h-[380px] flex justify-center items-center overflow-hidden shadow-2xl">
+        <img src="images/education/i.webp" alt="Course preview" class="w-full h-full  object-cover rounded-xl scale-105 hover:scale-110 transition duration-700 ease-in-out">
+
+        <div class="absolute top-8 left-8 bg-blue-100 p-3 rounded-lg shadow-lg animate-bounce">
+          <img src="images/education/Bell Icon.png" alt="" class="w-6 h-6">
+        </div>
+        <div class="absolute bottom-8 left-10 bg-gray-200 p-3 rounded-lg shadow-lg animate-pulse">
+          <img src="images/education/Love Icon.png " alt="" class="w-6 h-6">
+        </div>
+        <div class="absolute top-20 right-10 bg-pink-100 p-3 rounded-lg shadow-lg animate-bounce">
+          <img src="images/education/Verification Icon.png " alt="" class="w-6 h-6">
+        </div>
+
+        <div class="absolute bottom-4 right-4 bg-white px-5 py-3 rounded-lg shadow-xl text-gray-800 hover:shadow-pink-500/40 transition">
+          <p class="font-bold text-lg leading-tight">500+<br><span class="text-sm text-gray-500">Total Review</span></p>
+          <div class="flex text-yellow-400 mt-1">
+            <img src="images/education/Star.png" alt="Star" class="w-4 h-4">
+            <img src="images/education/Star.png" alt="Star" class="w-4 h-4">
+            <img src="images/education/Star.png" alt="Star" class="w-4 h-4">
+            <img src="images/education/Star.png" alt="Star" class="w-4 h-4">
+            <img src="images/education/Star.png" alt="Star" class="w-4 h-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-[#0b132b] mb-10">Trending Courses</h2>
+
+    <div id="categoryTabs" class="flex flex-wrap justify-center gap-4 mb-12">
+      <button class="tab-btn active-tab bg-gradient-to-r from-pink-600 to-purple-600 text-white px-6 py-2 rounded-full font-medium shadow-lg hover:shadow-pink-500/30 transition" data-category="all">All</button>
+      <button class="tab-btn rounded-3xl p-2 text-gray-500 hover:text-pink-600 transition" data-category="business">Business</button>
+      <button class="tab-btn rounded-3xl p-2 text-gray-500 hover:text-pink-600 transition" data-category="art">Art & Design</button>
+      <button class="tab-btn rounded-3xl p-2 text-gray-500 hover:text-pink-600 transition" data-category="development">Development</button>
+      <button class="tab-btn rounded-3xl p-2 text-gray-500 hover:text-pink-600 transition" data-category="marketing">Marketing</button>
+    </div>
+
+    <div id="coursesGrid" class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="art">
+        <div class="relative">
+          <img src="images/education/ui-ux.jpg" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Interpersonal Skills - Work Better With Others!</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$384</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="development">
+        <div class="relative">
+          <img src="images/education/development-web.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Web Developer</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">How To Become An Expert Web Developer</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$735</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="art">
+        <div class="relative">
+          <img src="images/education/UX.svg" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">UX Research</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">User Experience Design Essentials</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$826</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="marketing">
+        <div class="relative">
+          <img src="images/education/3D-design.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">3D Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Creating 3D Modelling In Blender</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$710</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="business">
+        <div class="relative">
+          <img src="/images/education/public.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Public Speaking</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Improve Your Public Speaking Skills</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$384</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="art">
+        <div class="relative">
+          <img src="images/education/UX-UI-2.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">UI/UX Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Advanced UX Techniques</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$758</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="development">
+        <div class="relative">
+          <img src="images/education/3D.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">3D Design</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Creating 3D Modelling In Blender</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$973</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="course-card bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden" data-category="marketing">
+        <div class="relative">
+          <img src="images/education/marketing.webp" alt="Course Image" class="w-full h-44 object-cover">
+          <span class="absolute bottom-3 left-3 bg-blue-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Marketing</span>
+        </div>
+        <div class="p-5 text-left">
+          <h3 class=" font-semibold text-lg text-gray-800 mb-2 hover:text-pink-600 transition">Marketing Strategy Essentials</h3>
+          <p class="text-sm text-gray-500 mb-3">Tanah Air Team</p>
+          <div class="flex items-center text-yellow-400 text-sm mb-2">
+            ⭐⭐⭐⭐⭐ <span class="text-gray-500 ml-1">(2078)</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="text-gray-400 line-through">$640</span>
+            <span class="text-xl font-bold text-gray-800">$273</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-12">
+      <button class="bg-gradient-to-r from-pink-600 to-purple-600 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:shadow-pink-500/40 transition transform hover:-translate-y-1">
+        More Courses
+      </button>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800 mb-14 text-center">
+      Top Categories
+    </h2>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/art.jpg" alt="Art & Design" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Art & Design
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/business.webp" alt="Business" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Business
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/copy-writing.webp" alt="Copy Writing" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Copy Writing
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/market.webp" alt="Marketing" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Marketing
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/programming.webp" alt="Programming" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Programming
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/photrogaphy.jpg" alt="Photography" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Photography
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/video-graphie.png" alt="Videography" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Videography
+        </div>
+      </div>
+
+      <div class="relative rounded-2xl overflow-hidden h-44 shadow-lg hover:shadow-pink-500/40 hover:scale-105 transition-all duration-500 cursor-pointer">
+        <img src="images/education/personal-development.webp" alt="Personal Development" class="w-full h-full object-cover opacity-90 hover:opacity-100 transition-all duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center text-white font-semibold text-lg pb-4">
+          Personal Development
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20 text-center">
+      <div>
+        <div class="text-pink-600 text-5xl mb-3">
+          <i class="fa-solid fa-video"></i>
+        </div>
+        <p class="font-extrabold text-2xl text-gray-800 counter" data-target="10000">0</p>
+        <p class="text-gray-500 text-sm">Courses</p>
+      </div>
+
+      <div>
+        <div class="text-pink-600 text-5xl mb-3">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <p class="font-extrabold text-2xl text-gray-800 counter" data-target="50000">0</p>
+        <p class="text-gray-500 text-sm">Active Students</p>
+      </div>
+
+      <div>
+        <div class="text-pink-600 text-5xl mb-3">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+        <p class="font-extrabold text-2xl text-gray-800 counter" data-target="1000">0</p>
+        <p class="text-gray-500 text-sm">Active Mentor</p>
+      </div>
+
+      <div>
+        <div class="text-pink-600 text-5xl mb-3">
+          <i class="fa-solid fa-flag"></i>
+        </div>
+        <p class="font-extrabold text-2xl text-gray-800 counter" data-target="180">0</p>
+        <p class="text-gray-500 text-sm">Countries</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div class="rounded-2xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-500">
+      <img src="images/education/mentor.webp" alt="mentor" class="w-full h-full object-cover">
+    </div>
+
+    <div>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-6">
+        Become an <span class="text-pink-600">Mentor</span>
+      </h2>
+      <p class="text-gray-600 leading-relaxed mb-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat iure odit, ad velit esse veritatis, porro ea officia amet maxime? Officiis error adipisci autem corporis eligendi iste blanditiis sit obcaecati eos nostrum. Exercitationem ipsum, iste repellendus a quam ea illum incidunt aliquam cum et excepturi, consequatur, necessitatibus laboriosam repudiandae!
+      </p>
+      <p class="text-gray-600 leading-relaxed mb-6">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum cum veritatis rem quos voluptas, nam reiciendis at repudiandae atque adipisci. Necessitatibus consectetur libero esse expedita doloribus voluptas et pariatur nam quasi assumenda distinctio tempore quibusdam sapiente quis quam perspiciatis unde similique, nisi quo eius atque repudiandae. Ullam, dolorum molestias? Reiciendis.
+      </p>
+      <button class="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-lg font-semibold transition-all">
+        Start Teaching
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="py-20 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="rounded-2xl overflow-hidden shadow-lg">
+      <img src="images/education/studing.webp" alt="student" class="w-full h-full object-cover">
+    </div>
+
+    <div class="relative">
+      <div id="testimonial-slides" class="overflow-hidden relative">
+        <div class="slide active opacity-100 transition-opacity duration-700">
+          <p class="text-xl font-semibold text-gray-800 leading-relaxed mb-4">
+            “After studying here I gained new knowledge and insights.  
+            The mentor was very friendly and guided me to get the knowledge I wanted. Thank you!”
+          </p>
+          <h4 class="font-bold text-gray-800">KecekArif</h4>
+          <p class="text-gray-500 text-sm">Surabaya, Indonesia</p>
+        </div>
+
+        <div class="slide absolute top-0 left-0 opacity-0 transition-opacity duration-700">
+          <p class="text-xl font-semibold text-gray-800 leading-relaxed mb-4">
+            “This platform helped me improve my design and marketing skills.  
+            The mentors are experienced and supportive!”
+          </p>
+          <h4 class="font-bold text-gray-800">Nur Aisha</h4>
+          <p class="text-gray-500 text-sm">Kuala Lumpur, Malaysia</p>
+        </div>
+
+        <div class="slide absolute top-0 left-0 opacity-0 transition-opacity duration-700">
+          <p class="text-xl font-semibold text-gray-800 leading-relaxed mb-4">
+            “Amazing experience! I learned more in three months than in a year at university.”
+          </p>
+          <h4 class="font-bold text-gray-800">John Smith</h4>
+          <p class="text-gray-500 text-sm">New York, USA</p>
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-6">
+        <button id="prev" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-all">
+          ‹
+        </button>
+        <button id="next" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition-all">
+          ›
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gradient-to-r  text-center">
+  <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-12">
+    Trusted by Company
+  </h2>
+
+  <div class="flex flex-wrap justify-center items-center gap-10 mb-10">
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/05.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/03.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/02.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/05.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+  </div>
+
+  <div class="flex flex-wrap justify-center items-center gap-10">
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/02.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+    <div class="bg-white rounded-xl shadow-md p-6 hover:shadow-2xl hover:-translate-y-1 transition duration-500">
+      <img src="images/education/01.png" alt="Company Logo" class="w-28 h-auto opacity-70 hover:opacity-100 transition duration-300">
+    </div>
+  </div>
+</section>
+<section class="py-20 bg-gradient-to-b from-white to-[#f8fafc]">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900 mb-14">
+      The Latest Blog
+    </h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+        <div class="w-full h-52 bg-gray-200">
+          <img src="images/education/graphis.jpg" alt="Blog Image" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 text-left">
+          <div class="text-xs text-gray-400 mb-2 flex items-center gap-3">
+            <span>3 May 2021</span>
+            <span>·</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">
+            10 graphic design trends to get you inspired in 2025
+          </h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+          <a href="#" class="text-pink-600 font-semibold text-sm hover:underline">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+        <div class="w-full h-52 bg-gray-200">
+          <img src="images/education/trigonometry.webp" alt="Blog Image" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 text-left">
+          <div class="text-xs text-gray-400 mb-2 flex items-center gap-3">
+            <span>3 May 2021</span>
+            <span>·</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">
+            Right Triangle Trigonometry Explained
+          </h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+          <a href="#" class="text-pink-600 font-semibold text-sm hover:underline">
+            Read More
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-2xl transition duration-500 hover:-translate-y-2">
+        <div class="w-full h-52 bg-gray-200">
+          <img src="images/education/chemistry.png" alt="Blog Image" class="w-full h-full object-cover">
+        </div>
+        <div class="p-6 text-left">
+          <div class="text-xs text-gray-400 mb-2 flex items-center gap-3">
+            <span>3 May 2021</span>
+            <span>·</span>
+            <span>3 min read</span>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-3">
+            2 Reasons Why You're Confusing Chemistry
+          </h3>
+          <p class="text-gray-600 text-sm mb-4">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+          </p>
+          <a href="#" class="text-pink-600 font-semibold text-sm hover:underline">
+            Read More
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ </main>
+
+<footer class="bg-[#071A3E] text-white py-14 px-6 md:px-16 rounded-t-3xl">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+
+    <div>
+      <div class="flex items-center space-x-3 mb-4">
+        <img src="images/education/Logo.png" alt="Logo" class="h-8 w-auto">
+      </div>
+      <p class="text-sm leading-relaxed text-gray-400">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet tristique placerat eleifend aliquam pellentesque facilisis ultricies. Imperdiet mus urna egestas at tellus.
+      </p>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">About</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+        <li><a href="#" class="hover:text-white transition">Courses</a></li>
+        <li><a href="#" class="hover:text-white transition">Mentor</a></li>
+        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Support</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+        <li><a href="#" class="hover:text-white transition">Help & Support</a></li>
+        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-white font-semibold text-lg mb-4">Company</h3>
+      <ul class="space-y-2 text-sm">
+        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+        <li><a href="#" class="hover:text-white transition">Code of Conduct</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="border-t border-gray-700 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
+    <div class="flex space-x-6 mb-4 md:mb-0">
+      <a href="#" class="hover:text-white transition">Privacy Policy</a>
+      <a href="#" class="hover:text-white transition">Terms and Condition</a>
+    </div>
+    <p>@2025 TanahAir Studio. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- Bak-to-top tugmasi bu yerda -->
+  <button id="backTop" class="hidden fixed right-5 bottom-5 p-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white rounded-full shadow-lg hover:scale-110 transition-transform">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
